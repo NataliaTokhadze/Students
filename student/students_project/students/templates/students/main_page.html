@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+</head>
+
+<body>
+    <h1>Your info:</h1>
+    <h2>Student: Name | Last name | GPA | Course</h2>
+    <ul>
+        {% for key, value in student.items %}
+            <li>{{ key }}: {{ value.0 }} | {{ value.1 }} | {{ value.2 }} | {{ value.3 }}</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
